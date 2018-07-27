@@ -1,3 +1,4 @@
 #!/bin/bash
-docker build --build-arg openjdk_version=openjdk-8-jre -f ./Dockerfile -t eskabetxe/docker-openjdk:jre8 .
-docker build --build-arg openjdk_version=openjdk-8-jdk -f ./Dockerfile -t eskabetxe/docker-openjdk:jdk8 .
+docker build -t eskabetxe/docker-openjdk:latest .
+docker build --build-arg openjdk_version=openjdk-8-jre -t eskabetxe/docker-openjdk:jre8 .
+docker build --build-arg openjdk_version=openjdk-8-jdk -t eskabetxe/docker-openjdk:jdk8 .
